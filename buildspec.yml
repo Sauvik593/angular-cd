@@ -6,6 +6,8 @@ phases:
       nodejs: 16
     commands:
       - npm install && npm install -g @angular/cli
+      - npm i @angular-devkit/build-angular@12.2.13 --force
+      - npm i @angular/cli@12
   build:
     commands:
       - echo Build started on `date`
