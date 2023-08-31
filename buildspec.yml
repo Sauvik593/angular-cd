@@ -9,7 +9,6 @@ phases:
       - npm i @angular-devkit/build-angular@12.2.13 --force
       - npm install -g @angular/cli@latest
       - ng update
-      - ng update @angular/cli @angular/coreng update @angular/cli @angular/core
   build:
     commands:
       - echo Build started on `date`
