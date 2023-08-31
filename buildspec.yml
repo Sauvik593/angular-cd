@@ -10,7 +10,7 @@ phases:
       #- npm install -g @angular/cli@latest
       - ng update
       - ng update @angular/cli@14
-      - ng update @angular/core@14
+      #- ng update @angular/core@14
   build:
     commands:
       - echo Build started on `date`
