@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
-      - npm install # && npm install -g @angular/cli
+      - npm install && npm install -g @angular/cli
       #- npm i @angular-devkit/build-angular@12.2.13 --force
       #- npm install -g @angular/cli@latest
       - ng update
@@ -14,7 +14,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       #- npm audit fix --force
-      - npm run build
+      - ng build:ci
 # Include only the files required for your application to run.
 # Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages 
 # used only for building and testing.
