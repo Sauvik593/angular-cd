@@ -5,9 +5,11 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
-      - npm install && npm install -g @angular/cli
+      - npm install # && npm install -g @angular/cli
       - npm i @angular-devkit/build-angular@12.2.13 --force
-      - npm i @angular/cli@12
+      - npm install -g @angular/cli@latest
+      - ng update
+      - ng update @angular/cli @angular/coreng update @angular/cli @angular/core
   build:
     commands:
       - echo Build started on `date`
