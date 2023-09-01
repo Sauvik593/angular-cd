@@ -14,7 +14,6 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - export DOCKER_HOST=
-      - sudo /etc/init.d/docker start
       - sudo systemctl enable docker
       - sudo systemctl status docker
       - sudo systemctl daemon-reload
