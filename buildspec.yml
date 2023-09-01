@@ -13,11 +13,12 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - sudo systemctl start docker
+      - sudo /etc/init.d/docker start
       - sudo systemctl enable docker
       - sudo systemctl status docker
       - sudo systemctl daemon-reload
       - sudo dockerd
+      - export DOCKER_HOST=
       - sudo docker build --platform linux/amd64 -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
